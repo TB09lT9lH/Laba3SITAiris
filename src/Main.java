@@ -8,7 +8,7 @@ public class Main {
     CashMachine cm = new CashMachine(cl.getPassword());
 
     while (true){
-        System.out.println("1-Ввести пароль\nлюбой другой символ-выйти");
+        System.out.println("1-Введите пароль\nНажмите любой другой символ для выхода");
         int key = new Scanner(System.in).nextInt();
         switch (key){
             case 1 -> cm.checkPass(kb.inputPassword(), cl);
